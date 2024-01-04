@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>7 najbogatszych ludzi na świecie</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+		</head>
+		<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">strona główna</a>
+  <a href="galeria.html">galeria</a>
+  <a href="ankieta.html">ankieta</a>
+  <a href="dodatek.html">dodatkowe informacje</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<br><br>
+
+<div class="header">
+  <div class="logo">LOGO</div>
+</div>
+<div class="animated-element"></div>
+<h1>7 NAJBOGATSZYCH LUDZI NA ŚWIECIE</h1>
+
+<div class="container2">
+  <div class="tile2" onclick="openPage('elon-musk.html')">
+    <h2>Elon Musk</h2>
+    <p>Elon Musk, ikona współczesnego biznesu, to niezwykły wizjoner, twórca firm takich jak SpaceX, Tesla czy Neuralink. Jego pasja do rewolucji w transporcie, eksploracji kosmosu i innowacji w technologii elektrycznej zmienia oblicze przemysłu. Z determinacją dąży do kolonizacji Marsa, rozwija samochody elektryczne oraz eksperymentuje z interfejsem mózg-maszyna. Jego nieustający wpływ na świat technologii czyni go jedną z najbardziej inspirujących postaci dzisiejszego świata.</p>
+  </div>
+  <br><br>
+  <div class="tile2">
+    <img src="foto/elon-musk1.jpeg" alt="Elon Musk">
+  </div>
+</div>
+
+<br><br><br><br>
+
+<div class="container1">
+  <div class="tile1" onclick="openPage('1.html')">
+    <h3>Bernard Arnault</h3>
+    <img src="foto/bernarnd-arnault1.jpg" alt="Bernard Arnault">
+  </div>
+  <div class="tile1_space"></div>
+  <div class="tile1" onclick="openPage('2.html')">
+    <h3>Jeff Bezos</h3>
+    <img src="foto/jeff-bezos1.jpg" alt="Jeff Bezos">
+  </div>
+  <div class="tile1_space"></div>
+  <div class="tile1" onclick="openPage('3.html')">
+    <h3>Bill Gates</h3>
+    <img src="foto/bill-gates1.jpg" alt="Bill Gates">
+  </div>
+</div>
+
+<div class="container1">
+  <div class="tile1" onclick="openPage('4.html')">
+    <img src="foto/steve-ballmer1.jpg" alt="Steve Ballmer">
+    <h3>Steve Ballmer</h3>
+  </div>
+  <div class="tile1_space"></div>
+  <div class="tile1" onclick="openPage('5.html')">
+    <img src="foto/mark-zuckerberg1.jpg" alt="Mark Zuckerberg">
+    <h3>Mark Zuckerberg</h3>
+  </div>
+  <div class="tile1_space"></div>
+  <div class="tile1" onclick="openPage('6.html')">
+    <img src="foto/larry-page2.jpg" alt="Larry Page">
+    <h3>Larry Page</h3>
+  </div>
+</div>
+
+
+<script>
+  function openPage(page) {
+    window.location.href = page;
+  }
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</nav>
+<div class="additional-menu-tab"></div>
+    <nav class="additional-menu">
+        <a href="https://twitter.com/elonmusk" target="_blank">Elon musk</a>
+        <a href="https://businessinsider.com.pl/wiadomosci/bernard-arnault-wlasciciel-lvmh-jest-drugim-najbogatszym-czlowiekiem-swiata/prtsjsc" target="_blank">Bernard Arnault</a>
+        <a href="https://www.entrepreneur.com/business-news/who-is-jeff-bezos-inside-the-billionaires-career-path/458073">Jeff Bezos</a>
+        <a href="https://www.gatesnotes.com/Bio" target="_blank">Bill Gates</a>
+        <a href="https://businessinsider.com.pl/poradnik-finansowy/oto-krol-dochodu-pasywnego-nie-pracujac-zarobi-1-mld-dol/7009t6x/" target="_blank">Steve Ballmer</a>
+        <a href="https://businessinsider.com.pl/mark-zuckerberg" target="_blank">Mark Zuckerberg</a>
+        <a href="https://www.komputerswiat.pl/artykuly/redakcyjne/10-rzeczy-ktorych-nie-wiedzieliscie-o-larrym-pageu-zalozycielu-google/xvpqvmw" target="_blank">Larry Page</a>
+    </nav>
+    <footer class="footer">
+      <p>Piotr Milewski 2ta</p>
+    </footer>
+</body>
+</html>

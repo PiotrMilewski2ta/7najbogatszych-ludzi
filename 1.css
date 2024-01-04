@@ -1,0 +1,146 @@
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Style dla opisu */
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .description h2 {
+    font-size: 1.5em;
+  }
+  
+  /* Style dla listy osiągnięć */
+  .achievements ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style dla zdjęcia */
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image3 {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    background-image: url('foto/bill-gates2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    font-size: 1em;
+  }
+  .image1 {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    background-image: url('foto/bernarnd-arnault2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    font-size: 1em;
+  }
+  .image2 {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    background-image: url('foto/jeff-bezos2.jpg ');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    font-size: 1em;
+  }
+
+.image4 {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-image: url('foto/steve-ballmer2.jpg ');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #333;
+  font-size: 1em;
+}
+.image5 {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-image: url('foto/mark-zuckerberg2.jpg ');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #333;
+  font-size: 1em;
+}
+.image6 {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-image: url('foto/larry-page2.jpg ');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #333;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  li {
+      font-family: Arial, sans-serif; /* Font family dla mniejszych ekranów */
+  }
+}
+
+/* Zmiana font-family dla ekranów od 600px do 1200px */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  li {
+      font-family: 'Times New Roman', Times, serif; /* Font family dla średnich ekranów */
+  }
+}
+
+/* Zmiana font-family dla większych ekranów (powyżej 1200px) */
+@media screen and (min-width: 1201px) {
+  li {
+      font-family: 'Courier New', Courier, monospace; /* Font family dla większych ekranów */
+  }
+}
+        /* Domyślny styl dla tekstu */
+        p {
+          text-align: center;
+          font-size: 18px;
+          color: rgb(0, 0, 0); /* Kolor domyślny */
+      }
+
+      /* Zmiana koloru tekstu dla mniejszych ekranów (do 600px) */
+      @media screen and (max-width: 600px) {
+          p {
+              color: rgb(160, 160, 160); /* Kolor dla mniejszych ekranów */
+          }
+      }
+
+      /* Zmiana koloru tekstu dla ekranów od 600px do 1200px */
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+          p {
+              color: rgb(117, 117, 117); /* Kolor dla średnich ekranów */
+          }
+      }
+
+      /* Zmiana koloru tekstu dla większych ekranów (powyżej 1200px) */
+      @media screen and (min-width: 1201px) 
+          p {
+              color: gray;} /* Kolor dla większych ekranów */
+

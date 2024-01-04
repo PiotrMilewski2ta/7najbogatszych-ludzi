@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>7 najbogatszych ludzi na świecie</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >strona główna</a>
+  <a href="galeria.html"class="active">galeria</a>
+
+  <a href="ankieta.html">ankieta</a>
+  
+  <a href="dodatek.html">dodatkowe informacje</a> 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+<br></br>
+<div class="header">
+  <div class="logo">LOGO</div>
+</div>
+<div id="slider-container">
+  <div id="slider">
+    <div class="slide"><img src="foto/galeria1.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="foto/galeria5.jpg" alt="Slide 2"></div>
+    <div class="slide"><img src="foto/galeria3.jpg" alt="Slide 3"></div>
+    <div class="slide"><img src="foto/galeria4.jpg" alt="Slide 4"></div>
+  </div>
+</div>
+
+<div id="slider-controls"></div>
+
+<body>
+
+<script>
+  const slider = document.getElementById('slider');
+  const slides = document.querySelectorAll('.slide');
+  const controlsContainer = document.getElementById('slider-controls');
+
+  let currentIndex = 0;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+  }
+
+  function createControlDot(index) {
+    const dot = document.createElement('div');
+    dot.classList.add('slider-dot');
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      updateSlider();
+    });
+    return dot;
+  }
+
+  function initializeControls() {
+    slides.forEach((slide, index) => {
+      const dot = createControlDot(index);
+      controlsContainer.appendChild(dot);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  }
+
+  function startSlider() {
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  }
+
+  initializeControls();
+  startSlider();
+</script>
+<footer class="footer">
+  <p>Piotr Milewski 2ta</p>
+</footer>
+</body>
+</hml>
+
